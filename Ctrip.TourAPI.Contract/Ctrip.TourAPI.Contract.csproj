@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE001F4B-09F5-4580-80CF-2B50EC0A564E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ctrip.OpenAPI.Contract</RootNamespace>
+    <AssemblyName>Ctrip.OpenAPI.Contract</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Ctrip.OpenAPI.Contract.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Ctrip.OpenAPI.Contract.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Order\AnnounceGroup.cs" />
+    <Compile Include="Order\AnnounceGroupRequest.cs" />
+    <Compile Include="Order\AnnounceGroupResponse.cs" />
+    <Compile Include="Order\Change.cs" />
+    <Compile Include="Order\ConfirmOrderRequest.cs" />
+    <Compile Include="Order\ConfirmOrderResponse.cs" />
+    <Compile Include="Order\GetTodoOrderListRequest.cs" />
+    <Compile Include="Order\GetTodoOrderListResponse.cs" />
+    <Compile Include="Order\OptionInfo.cs" />
+    <Compile Include="Order\Order.cs" />
+    <Compile Include="Order\OrderEnum.cs" />
+    <Compile Include="Order\OrderInfo.cs" />
+    <Compile Include="Order\PackageInfo.cs" />
+    <Compile Include="Order\RejectOrderRequest.cs" />
+    <Compile Include="Order\RejectOrderResponse.cs" />
+    <Compile Include="Order\Traveler.cs" />
+    <Compile Include="Product\AddProductInfoRequest.cs" />
+    <Compile Include="Product\AddProductInfoResponse.cs" />
+    <Compile Include="Product\BeginSellingRequest.cs" />
+    <Compile Include="Product\BeginSellingResponse.cs" />
+    <Compile Include="Product\BeginSellingType.cs" />
+    <Compile Include="Product\BookingInfoType.cs" />
+    <Compile Include="Product\GetTodoRejectProductListRequest.cs" />
+    <Compile Include="Product\GetTodoRejectProductListResponse.cs" />
+    <Compile Include="Product\InventoryType.cs" />
+    <Compile Include="Product\OptionType.cs" />
+    <Compile Include="Product\PackageType.cs" />
+    <Compile Include="Product\PriceType.cs" />
+    <Compile Include="Product\ProductInfoType.cs" />
+    <Compile Include="Product\RejectProductType.cs" />
+    <Compile Include="Product\StopSellingRequest.cs" />
+    <Compile Include="Product\StopSellingResponse.cs" />
+    <Compile Include="Product\StopSellingType.cs" />
+    <Compile Include="Product\UpdateProductInfoRequest.cs" />
+    <Compile Include="Product\UpdateProductInfoResponse.cs" />
+    <Compile Include="Product\UpdateProductInfoType.cs" />
+    <Compile Include="Product\UpdateProductInventoryRequest.cs" />
+    <Compile Include="Product\UpdateProductInventoryResponse.cs" />
+    <Compile Include="Product\UpdateProductOptionRequest.cs" />
+    <Compile Include="Product\UpdateProductOptionResponse.cs" />
+    <Compile Include="Product\UpdateProductPriceRequest.cs" />
+    <Compile Include="Product\UpdateProductPriceResponse.cs" />
+    <Compile Include="Product\UpdateProductUpgradePackageRequest.cs" />
+    <Compile Include="Product\UpdateProductUpgradePackageResponse.cs" />
+    <Compile Include="Product\VisaInfoType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestBase.cs" />
+    <Compile Include="RequestHeaderType.cs" />
+    <Compile Include="ResponseBase.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

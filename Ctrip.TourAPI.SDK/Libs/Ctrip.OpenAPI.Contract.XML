@@ -1,0 +1,1649 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ctrip.OpenAPI.Contract</name>
+    </assembly>
+    <members>
+        <member name="T:Ctrip.TourAPI.AnnounceGroup">
+            <summary>
+            宣布成团类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AnnounceGroup.StartDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AnnounceGroup.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AnnounceGroup.DayOfWeek">
+            <summary>
+            每周的有效班期
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.AnnounceGroupRequest">
+            <summary>
+            宣布成团请求
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.RequestBase">
+            <summary>
+            请求基本类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RequestBase.RequestHeader">
+            <summary>
+            请求头类型
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.AnnounceGroupRequest.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AnnounceGroupRequest.VendorProductCode">
+            <summary>
+            供应商产品编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AnnounceGroupRequest.AnnounceGroupList">
+            <summary>
+            宣布成团列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.AnnounceGroupResponse">
+            <summary>
+            宣布成团响应
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.ResponseBase">
+            <summary>
+            响应基本类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ResponseBase.ErrorCode">
+            <summary>
+            故障编码
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ResponseBase.ErrorMsg">
+            <summary>
+            故障信息
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.Change">
+            <summary>
+            更新内容类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Change.Element">
+            <summary>
+            更新元素名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Change.OriginalValue">
+            <summary>
+            原始值
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Change.CurrentValue">
+            <summary>
+            当前值
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.ConfirmOrderRequest">
+            <summary>
+            确认订单请求
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ConfirmOrderRequest.OrderId">
+            <summary>
+            携程订单编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ConfirmOrderRequest.VendorOrderId">
+            <summary>
+            供应商订单号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ConfirmOrderRequest.MessageId">
+            <summary>
+            消息编号
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.ConfirmOrderResponse">
+            <summary>
+            确认订单响应
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.GetTodoOrderListRequest">
+            <summary>
+            订单行为获取请求
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.GetTodoOrderListRequest.StartDateTime">
+            <summary>
+            起始时间
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.GetTodoOrderListRequest.EndDateTime">
+            <summary>
+            截止时间
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.GetTodoOrderListResponse">
+            <summary>
+            订单行为获取响应
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.GetTodoOrderListResponse.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.GetTodoOrderListResponse.TodoOrderList">
+            <summary>
+            订单列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.OptionInfo">
+            <summary>
+            可选项类型
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.OptionInfo.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OptionInfo.VendorOptionCode">
+            <summary>
+            供应商附加服务类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OptionInfo.Currency">
+            <summary>
+            币种
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OptionInfo.ExchangeRate">
+            <summary>
+            汇率
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OptionInfo.CostPrice">
+            <summary>
+            底价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OptionInfo.Quantity">
+            <summary>
+            份额
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OptionInfo.TravelerIdList">
+            <summary>
+            出行人编号列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.Order">
+            <summary>
+            订单类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Order.OrderId">
+            <summary>
+            携程订单编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Order.Action">
+            <summary>
+            订单操作状态
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Order.VendorProductCode">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Order.DepartureDate">
+            <summary>
+            出发日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Order.OrderInfo">
+            <summary>
+            订单信息
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Order.ChangeList">
+            <summary>
+            更新内容列表
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Order.MessageId">
+            <summary>
+            消息编号
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.OrderAction">
+            <summary>
+            订单 处理类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.OrderAction.Create">
+            <summary>
+            新建订单
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.OrderAction.Modify">
+            <summary>
+            修改订单
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.OrderAction.Pay">
+            <summary>
+            订单付款
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.OrderAction.Delete">
+            <summary>
+            删除订单，在确认前的删除。
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.OrderAction.Cancel">
+            <summary>
+            取消订单，在确认后的删除。
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.AgeCategory">
+            <summary>
+            年龄段类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.AgeCategory.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.AgeCategory.Adult">
+            <summary>
+            成人
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.AgeCategory.Child">
+            <summary>
+            儿童
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.AgeCategory.Infant">
+            <summary>
+            婴儿
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.IDType">
+            <summary>
+            证件类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.IDCard">
+            <summary>
+            身份证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.Passport">
+            <summary>
+            护照
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.HouseholdRegister">
+            <summary>
+            户口簿
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.PermitToHongKongAndMacau">
+            <summary>
+            港澳通行证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.TaiwanEntryPermits">
+            <summary>
+            入台证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.MilitaryOfficer">
+            <summary>
+            军官证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.TaiwanCompatriotPermit">
+            <summary>
+            台胞证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.HomeReturnPermit">
+            <summary>
+            香港居民往来内地通行证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.PoliceBadge">
+            <summary>
+            警官证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.DrivingLicense">
+            <summary>
+            驾驶证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.StudentIdentity">
+            <summary>
+            学生证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.SeafarerPassport">
+            <summary>
+            海员证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.ForeignerPermanent">
+            <summary>
+            外国人在中国永久居留证
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.IDType.Other">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.Gender.Male">
+            <summary>
+            男性
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.Gender.Female">
+            <summary>
+            女性
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.OrderInfo">
+            <summary>
+            订单信息类型
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.OrderInfo.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OrderInfo.BookingTime">
+            <summary>
+            预订时间
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OrderInfo.PackageInfo">
+            <summary>
+            套餐信息
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OrderInfo.OptionInfoList">
+            <summary>
+            可选项列表
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OrderInfo.TravelerList">
+            <summary>
+            出行人列表
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OrderInfo.IsPaid">
+            <summary>
+            付款状态 ： 已付 true/未付 false
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OrderInfo.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.PackageInfo">
+            <summary>
+            套餐信息类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.VendorPackageCode">
+            <summary>
+            供应商套餐编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.Currency">
+            <summary>
+            币种
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.ExchangeRate">
+            <summary>
+            汇率
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.AdultQuantity">
+            <summary>
+            成人份数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.AdultCostPrice">
+            <summary>
+            成人底价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.ChildQuantity">
+            <summary>
+            儿童份数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.ChildCostPrice">
+            <summary>
+            儿童底价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.SinglePersonQuantity">
+            <summary>
+            单房差份额
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.SinglePersonCostPrice">
+            <summary>
+            单房差底价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInfo.InfantQuantity">
+            <summary>
+            婴儿份数
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.RejectOrderRequest">
+            <summary>
+            拒绝新订单请求
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RejectOrderRequest.OrderId">
+            <summary>
+            携程订单编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RejectOrderRequest.Reason">
+            <summary>
+            拒绝原因
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RejectOrderRequest.MessageId">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.RejectOrderResponse">
+            <summary>
+            拒绝新订单响应
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.Traveler">
+            <summary>
+            出行人类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.TravelerId">
+            <summary>
+            出行人编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.ChineseName">
+            <summary>
+            中文姓名
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.EnglishName">
+            <summary>
+            英文姓名
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.Nationality">
+            <summary>
+            国籍
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.BirthDate">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.BirthCity">
+            <summary>
+            出生城市
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.AgeCategory">
+            <summary>
+            年龄段
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.IDType">
+            <summary>
+            证件类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.IDNumber">
+            <summary>
+            证件号码
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.IssuedDate">
+            <summary>
+            证件签发日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.ExpiredDate">
+            <summary>
+            证件过期日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.IssuedPlace">
+            <summary>
+            签发地
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Traveler.IsRoomShare">
+            <summary>
+            是否愿意拼房
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.AddProductInfoRequest">
+            <summary>
+            添加产品基本信息请求
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.AddProductInfoRequest.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AddProductInfoRequest.VendorProductCode">
+            <summary>
+            供应商产品编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AddProductInfoRequest.ProductInfo">
+            <summary>
+            供应商产品信息
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AddProductInfoRequest.BookingInfo">
+            <summary>
+            预定控制
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AddProductInfoRequest.VisaInfo">
+            <summary>
+            签证信息(默认为null)
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AddProductInfoRequest.ProductDescriptionList">
+            <summary>
+            产品条款信息
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AddProductInfoRequest.ItineraryList">
+            <summary>
+            每日行程
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AddProductInfoRequest.BreachClause">
+            <summary>
+            退订条款(默认为null)
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.AddProductInfoResponse">
+            <summary>
+            添加产品基本信息响应
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.AddProductInfoResponse.CtripProductCode">
+            <summary>
+            携程产品编号
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.BeginSellingRequest">
+            <summary>
+            打开产品班期请求
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.BeginSellingRequest.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BeginSellingRequest.VendorProductCode">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BeginSellingRequest.SellingList">
+            <summary>
+            打开产品班期请求列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.BeginSellingResponse">
+            <summary>
+            打开产品班期响应
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.BeginSelling">
+            <summary>
+            打开产品班期类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.BeginSelling.StartDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.BeginSelling.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.BeginSelling.DayOfWeek">
+            <summary>
+            每周的有效班期。若每天都有班期则为1234567, 124则为周一、二、四开班
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.BookingInfoType">
+            <summary>
+            预定控制类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.ProductContact">
+            <summary>
+            产品咨询联系人
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.ProductContactMobile">
+            <summary>
+            产品咨询联系人电话
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.IsSMSNotify">
+            <summary>
+            新订单是否短信通知
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.EmergencyContact">
+            <summary>
+            紧急联系人名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.EmergencyContactMobile">
+            <summary>
+            紧急联系人电话
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.IsPublishEmergencyContact">
+            <summary>
+            是否公布紧急联系人
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.AdvancedCloseDays">
+            <summary>
+            提前几天停止售卖
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.AdvancedCloseTime">
+            <summary>
+            停止售卖的时间（格式 - HH:mm，必须为整点)
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.Currency">
+            <summary>
+            底价币种，默认CNY
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.IsWeekendWork">
+            <summary>
+            是否周末工作
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BookingInfoType.IsHolidayWork">
+            <summary>
+            节假日是否工作
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.GetTodoRejectProductListRequest">
+            <summary>
+            获得产品审核信息请求
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.GetTodoRejectProductListRequest.StartDateTime">
+            <summary>
+            审核开始时间
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.GetTodoRejectProductListRequest.EndDateTime">
+            <summary>
+            审核结束时间
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.GetTodoRejectProductListResponse">
+            <summary>
+            获得产品审核信息响应
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.GetTodoRejectProductListResponse.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.GetTodoRejectProductListResponse.RejectProductList">
+            <summary>
+            产品审核信息列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.Inventory">
+            <summary>
+            产品库存类型
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.Inventory.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Inventory.StartDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Inventory.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Inventory.DayOfWeek">
+            <summary>
+            每周的有效班期。若每天都有班期则为1234567, 124则为周一、二、四开班
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Inventory.PackageInventoryInfoList">
+            <summary>
+            套餐库存信息列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.PackageInventoryInfo">
+            <summary>
+            套餐库存信息类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInventoryInfo.VendorPackageCode">
+            <summary>
+            供应商套餐编码
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInventoryInfo.InventoryType">
+            <summary>
+            库存类型
+            Inventory: 库存，NeedComfirn:每单确认
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInventoryInfo.ReservedInventoryQuantity">
+            <summary>
+            切位库存数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInventoryInfo.SharedInventoryQuantity">
+            <summary>
+            共享库存数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInventoryInfo.ReservedInventoryCleanUpHour">
+            <summary>
+            库存清位时刻，如：XX点
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackageInventoryInfo.ReservedInventoryCleanUpDays">
+            <summary>
+            库存清位提前天数
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.Option">
+            <summary>
+            附加服务类型
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.Option.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Option.OptionName">
+            <summary>
+            附加服务名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Option.VendorOptionCode">
+            <summary>
+            供应商附加服务编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Option.OptionDescription">
+            <summary>
+            附加服务介绍
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Option.MinPersonCount">
+            <summary>
+            限定人档的最少人数，默认1
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Option.MaxPersonCount">
+            <summary>
+            限定人档的最大人数，默认999
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpgradePackage">
+            <summary>
+            升级套餐类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpgradePackage.PackageName">
+            <summary>
+            套餐名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpgradePackage.VendorPackageCode">
+            <summary>
+            供应商套餐编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpgradePackage.PackageDescription">
+            <summary>
+            套餐介绍
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.Price">
+            <summary>
+            价格类型
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.Price.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Price.StartDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Price.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Price.DayOfWeek">
+            <summary>
+            每周的有效班期。若每天都有班期则为1234567, 124则为周一、二、四开班
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Price.PackagePriceInfoList">
+            <summary>
+            套餐价格信息列表
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Price.OptionPriceInfoList">
+            <summary>
+            附加服务价格信息列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.PackagePriceInfo">
+            <summary>
+            套餐价格信息类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackagePriceInfo.VendorPackageCode">
+            <summary>
+            供应商套餐编码
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackagePriceInfo.AdultCostPrice">
+            <summary>
+            成人底价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackagePriceInfo.AdultSalePrice">
+            <summary>
+            成人卖价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackagePriceInfo.ChildCostPrice">
+            <summary>
+            儿童底价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackagePriceInfo.ChildSalePrice">
+            <summary>
+            儿童卖价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackagePriceInfo.SinglePersonCostPrice">
+            <summary>
+            单房差底价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.PackagePriceInfo.SinglePersonSalePrice">
+            <summary>
+            单房差卖价
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.OptionPriceInfo">
+            <summary>
+            附加服务价格信息类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OptionPriceInfo.VendorOptionCode">
+            <summary>
+            供应商附加服务编码
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OptionPriceInfo.CostPrice">
+            <summary>
+            底价
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.OptionPriceInfo.SalePrice">
+            <summary>
+            卖价(业务可能协商供应商指定卖价)
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.ProductInfoType">
+            <summary>
+            供应商产品信息类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.TourType">
+            <summary>
+            携程产品类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.VendorProductName">
+            <summary>
+            供应商产品名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.BrandName">
+            <summary>
+            品牌名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.ProductRecommend">
+            <summary>
+            产品推荐
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.DescriptionToCtripOperator">
+            <summary>
+            携程OP注意事项
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.TravelDays">
+            <summary>
+            行程天数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.DepartureCityName">
+            <summary>
+            出发城市
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.ArrivalCityName">
+            <summary>
+            目的地城市(第一天行程）
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.TransportationType">
+            <summary>
+            携程定义的交通工具类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductInfoType.IsNeedIDCard">
+            <summary>
+            是否需要证件号预定
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.ProductDescription">
+            <summary>
+            产品条款信息类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductDescription.DescriptionType">
+            <summary>
+            条款类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ProductDescription.Content">
+            <summary>
+            内容描述
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.ItineraryDay">
+            <summary>
+            每日行程类型
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.ItineraryDay.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ItineraryDay.Day">
+            <summary>
+            第几天行程，1~20，不得重复，1起步顺序增长
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ItineraryDay.ItineraryName">
+            <summary>
+            行程段标题(北京-上海)
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ItineraryDay.ItineraryDescription">
+            <summary>
+            行程描述
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ItineraryDay.AccommdationDescription">
+            <summary>
+            住宿描述
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ItineraryDay.MealDescription">
+            <summary>
+            餐饮描述
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.ItineraryDay.POIList">
+            <summary>
+            兴趣点列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.POI">
+            <summary>
+            兴趣点类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.POI.POIName">
+            <summary>
+            兴趣点名称
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.BreachClause">
+            <summary>
+            退订条款集
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.BreachClause.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BreachClause.TravelerBreachClauseList">
+            <summary>
+            游客退订条款列表
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BreachClause.AgencyBreachClauseList">
+            <summary>
+            供应商退订条款列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.BreachClauseType">
+            <summary>
+            退订条款类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BreachClauseType.FromDaysBeforeDeparture">
+            <summary>
+            最大提前天数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BreachClauseType.ToDaysBeforeDeparture">
+            <summary>
+            最小提前天数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.BreachClauseType.LossPercent">
+            <summary>
+            损失比例，取值【0-1】，两位小数
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.TourType">
+            <summary>
+            携程产品类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TourType.AroundTour">
+            <summary>
+            国内周边N日游
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TourType.DomesticTour">
+            <summary>
+            国内游
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TourType.OutboundTour">
+            <summary>
+            出境游
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TourType.OverSeasLocalTour">
+            <summary>
+            境外N日游
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.TransportationType">
+            <summary>
+            携程定义的交通工具类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.Airplane">
+            <summary>
+            飞机
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.Train">
+            <summary>
+            火车
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.Car">
+            <summary>
+            自驾
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.Bus">
+            <summary>
+            巴士
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.Ship">
+            <summary>
+            轮船
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.Cruises">
+            <summary>
+            邮轮
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.Speedboat">
+            <summary>
+            快船
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.AirplaneTrain">
+            <summary>
+            飞机+火车
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.AirplaneBus">
+            <summary>
+            飞机+巴士
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.TransportationType.BusTrain">
+            <summary>
+            巴士+火车
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.DescriptionType">
+            <summary>
+            条款类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.DescriptionType.Recommend">
+            <summary>
+            产品经理推荐
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.DescriptionType.BookingInfo">
+            <summary>
+            预定须知
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.DescriptionType.IncludeExpense">
+            <summary>
+            费用包含
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.DescriptionType.VisaInfo">
+            <summary>
+            签证须知
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.DescriptionType.ExcludeExpense">
+            <summary>
+            自理费用说明
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.DescriptionType.ChildPriceDefination">
+            <summary>
+            儿童价定义
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.RejectProductType">
+            <summary>
+            产品审核信息
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RejectProductType.VendorProductCode">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RejectProductType.AuditType">
+            <summary>
+            审核类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RejectProductType.Days">
+            <summary>
+            被拒绝的日期，用半角逗号(,)隔开
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RejectProductType.RejectReason">
+            <summary>
+            拒绝原因
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.AuditType">
+            <summary>
+            审核类型
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.AuditType.Product">
+            <summary>
+            产品
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.AuditType.Price">
+            <summary>
+            产品价格
+            </summary>
+        </member>
+        <member name="F:Ctrip.TourAPI.AuditType.Inventory">
+            <summary>
+            产品库存
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.StopSellingRequest">
+            <summary>
+            关闭产品班期请求
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.StopSellingRequest.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.StopSellingRequest.VendorProductCode">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.StopSellingRequest.SellingList">
+            <summary>
+            关闭产品班期列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.StopSellingResponse">
+            <summary>
+            关闭产品班期响应
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.StopSelling">
+            <summary>
+            关闭产品班期类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.StopSelling.StartDate">
+            <summary>
+            开始日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.StopSelling.EndDate">
+            <summary>
+            结束日期
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.StopSelling.DayOfWeek">
+            <summary>
+            每周的有效班期。若每天都有班期则为1234567, 124则为周一、二、四开班
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.StopSelling.Reason">
+            <summary>
+            关团原因
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductInfoRequest">
+            <summary>
+            更新产品基本信息请求(暂时不支持更新）
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoRequest.VendorProductCode">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoRequest.ProductInfo">
+            <summary>
+            供应商产品信息
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoRequest.BookingInfo">
+            <summary>
+            预定控制
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoRequest.VisaInfo">
+            <summary>
+            签证信息
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoRequest.ProductDescriptionList">
+            <summary>
+            产品条款信息
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoRequest.ItineraryList">
+            <summary>
+            每日行程
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoRequest.BreachClause">
+            <summary>
+            退订条款
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductInfoResponse">
+            <summary>
+            更新产品基本信息响应(暂不支持更新）
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoResponse.CtripProductCode">
+            <summary>
+            携程产品编号
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductInfoType">
+            <summary>
+            更新供应商产品信息类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoType.VendorProductName">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoType.BrandName">
+            <summary>
+            供应商产品品牌名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoType.ProductRecommend">
+            <summary>
+            产品推荐
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoType.DescriptionToCtripOperator">
+            <summary>
+            携程OP注意事项
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoType.TransportationType">
+            <summary>
+            携程定义的交通工具类型，参看接口文档对类型的定义
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInfoType.IsNeedIDCard">
+            <summary>
+            是否需要证件号预定
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductInventoryRequest">
+            <summary>
+            更新产品库存请求
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.UpdateProductInventoryRequest.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInventoryRequest.VendorProductCode">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductInventoryRequest.InventoryList">
+            <summary>
+            产品库存列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductInventoryResponse">
+            <summary>
+            更新产品库存响应
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductOptionRequest">
+            <summary>
+            保存附加服务请求
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.UpdateProductOptionRequest.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductOptionRequest.VendorProductCode">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductOptionRequest.OptionList">
+            <summary>
+            附加服务列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductOptionResponse">
+            <summary>
+            保存附加服务响应
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductPriceRequest">
+            <summary>
+            更新产品价格请求
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.UpdateProductPriceRequest.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductPriceRequest.VendorProductCode">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductPriceRequest.PriceList">
+            <summary>
+            价格列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductPriceResponse">
+            <summary>
+            更新产品价格响应
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductUpgradePackageRequest">
+            <summary>
+            保存升级套餐请求
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.UpdateProductUpgradePackageRequest.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductUpgradePackageRequest.VendorProductCode">
+            <summary>
+            供应商产品编号,业务唯一编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.UpdateProductUpgradePackageRequest.UpgradePackageList">
+            <summary>
+            升级套餐列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.UpdateProductUpgradePackageResponse">
+            <summary>
+            保存升级套餐响应
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.VisaInfoType">
+            <summary>
+            签证信息类型
+            </summary>
+        </member>
+        <member name="M:Ctrip.TourAPI.VisaInfoType.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaInfoType.IsNeedDeposit">
+            <summary>
+            是否需要押金
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaInfoType.VisaDeliveryAddress">
+            <summary>
+            送签地址
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaInfoType.VisaList">
+            <summary>
+            签证信息列表
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.VisaDeliveryAddressType">
+            <summary>
+            送签地址类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.CityName">
+            <summary>
+            接收城市名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.CompanyName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.Address">
+            <summary>
+            接收地址
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.PostCode">
+            <summary>
+            邮编
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.Contact">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.Mobile">
+            <summary>
+            手机
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.Phone">
+            <summary>
+            办公电话
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.Email">
+            <summary>
+            电子邮件
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.WorkingHours">
+            <summary>
+            工作时间
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.VisaDeliveryAddressType.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.Visa">
+            <summary>
+            签证信息类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Visa.VendorVisaCode">
+            <summary>
+            供应商签证编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.Visa.VisaName">
+            <summary>
+            签证名称
+            </summary>
+        </member>
+        <member name="T:Ctrip.TourAPI.RequestHeaderType">
+            <summary>
+            请求头类型
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RequestHeaderType.VendorId">
+            <summary>
+            供应商编号
+            </summary>
+        </member>
+        <member name="P:Ctrip.TourAPI.RequestHeaderType.VendorToken">
+            <summary>
+            供应商令牌
+            </summary>
+        </member>
+    </members>
+</doc>
